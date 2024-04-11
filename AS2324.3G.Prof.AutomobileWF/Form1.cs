@@ -77,6 +77,13 @@ namespace AS2324._3G.Prof.AutomobileWF
                 grbComandi.Enabled = false;
 
         }
-        
+        private void chkCinture_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkAccensione.Checked == false)
+            {
+                string messaggio = "non sta usando la cintura di sicurezza";
+                lstMonitor.Items.Add(messaggio);
+            }
+        }
     }
 }
